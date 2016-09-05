@@ -5,21 +5,11 @@ dintre componentele distribuite ale unui sistem
 
 ### Prerequisites
 
-#### VCS (Version Control System) (Git)
-
-
-#### Alegerea stack-ului tehnologic
-
-Nu este restricție în utilizarea unui limbaj de programare.
+- VCS (Version Control System) Git;
+- Limbajul de programare: nu este restricționat.
 Însă, cu cît mai exotic este limbajul de programare,
 cu atît sunt mai mari șansele că vor fi puse întrebări legate de particularitățile acestuia
 (nimic grav, doar pentru a înțelege clar implementarea).
-
-Utilizarea completă a soluțiilor existente nu este admisibilă.
-Însă utilizarea unor librării care facilitează rezolvarea unei
-probleme concrete este complet ok.
-De ex: Dacă modulul built-in a limbajului ales nu oferă o interfață comodă pentru a lucra cu
-parsarea XML, însă există un third-party modul care oferă o interfață comodă, atunci utilizarea acestuia este binevenită.
 
 ### Obiective
 
