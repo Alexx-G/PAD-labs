@@ -38,6 +38,11 @@ se vor aprecia conform baremului pentru lucrarea de laborator în cauză.
 Îți rămîne să faci raportul, să-l expediezi și **să-l susții** (o procedură în care analizăm împreună lucrarea și o apreciem obiectiv).
 
 ### Implementarea soluției
+Utilizarea completă a soluțiilor existente nu este admisibilă.
+Însă utilizarea unor librării care facilitează rezolvarea unei
+probleme concrete este complet ok.
+De ex: Dacă modulul built-in a limbajului ales nu oferă o interfață comodă pentru a lucra cu
+parsarea XML, însă există un third-party modul care oferă o interfață comodă, atunci utilizarea acestuia este binevenită.
 
 #### GIT (VCS - version control system)
 Drept VCS va fi utilizat Git. Ca provider de serviciu va fi utilizat [github.com](https://github.com)
