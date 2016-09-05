@@ -94,7 +94,7 @@ Dacă platforma aleasă are o structură recomandată, atunci aceasta trebuie fo
 Nu ezitați să vă consultați dacă nu sunteți siguri la acest capitol.
 
 #### Expedierea raportului și susținerea
-După ce ai impmenentat task-urile și ai făcut raportul, asigură-te că în repozitoriul să află versiunea actuală a proiectului pe master, trimite-mi un e-mail:
+După ce ai implementat task-urile și ai făcut raportul, asigură-te că în repozitoriul să află versiunea actuală a proiectului pe master, trimite-mi un e-mail:
 - Atașează raportul în formatul **PDF**,
 - Subiectul email-ului `[PAD][<grupa>][Lab<nr lab>][Nume Prenume]`,
 - Linkul către repozitoriul cu lucrarea de laborator,
