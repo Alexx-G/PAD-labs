@@ -79,3 +79,31 @@ Astfel procesul tău de lucru va fi la maxim transparent și colaborarea în pro
 [git flow](http://nvie.com/posts/a-successful-git-branching-model/) and
 [git book](http://git-scm.com/book));
 - [Alte VCS](https://biz30.timedoctor.com/git-mecurial-and-cvs-comparison-of-svn-software/).
+
+#### Structurarea proiectului
+Dacă platforma aleasă are o structură recomandată, atunci aceasta trebuie folosită.
+În caz contrar structura trebuie să fie următoarea:
+```
+.
+├── .gitignore <-- gitignore specific for the project
+├── README.md <-- readme of the project
+├── requirements <-- folder with readme for project specific requirements
+└── src <--- folder with source code
+```
+
+Nu ezitați să vă consultați dacă nu sunteți siguri la acest capitol.
+
+#### Expedierea raportului și susținerea
+După ce ai impmenentat task-urile și ai făcut raportul, asigură-te că în repozitoriul să află versiunea actuală a proiectului pe master, trimite-mi un e-mail:
+- Atașează raportul în formatul **PDF**,
+- Subiectul email-ului `[PAD][<grupa>][Lab<nr lab>][Nume Prenume]`,
+- Linkul către repozitoriul cu lucrarea de laborator,
+- Adresa destinatarului: alexxg.tmd+utm@gmail.com
+
+Note:
+- Prezentarea laboratorului in Latex nu este obligatorie(dar se va aprecia cu +1), se poate de prezentat si in varianta simpla PDF
+- Cu cit mai multe detalii vei atasa la laboratorul tau, cu atit mai putine intrebari iti voi adresa in timpul prezentarii.
+- Daca careva din notiuni/cuvinte nu iti sunt cunoascute - google it.
+- Daca ai careva intrebari si nu le-ai gasit pe net, intreaba de colegii tai
+- Daca nici una din obtiuni nu lucreaza pentru tine, expediaza-mi un email cu intrebarea ta. Totusi, te-as sfatui sa gasesti singur iesire din situatie, asta te va ajuta pe viitor in viitoarea ta cariera.
+- Majoritatea notiunilor si a documentatiei va fi in limba engleza, pentru a facilita verificarea acesteia.
