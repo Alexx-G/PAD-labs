@@ -22,7 +22,8 @@ Referințe:
 [3](http://www.vogella.com/articles/Git/article.html);
 - Utilizarea eficientă a git-ului (
 [git flow](http://nvie.com/posts/a-successful-git-branching-model/) and
-[git book](http://git-scm.com/book)).
+[git book](http://git-scm.com/book));
+- [Alte VCS](https://biz30.timedoctor.com/git-mecurial-and-cvs-comparison-of-svn-software/).
 
 #### Alegerea stack-ului tehnologic
 
