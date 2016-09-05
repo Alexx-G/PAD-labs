@@ -14,10 +14,15 @@ Utilizarea VCS are ca scopuri:
 - facilizarea revizuirii proiectului.
 
 Referințe:
-- Instalarea clientului git;
-- Configurarea cheilor;
-- Principii de bază;
-- Utilizarea eficientă a git-ului (git flow);
+- [Instalarea clientului git](https://git-scm.com/downloads);
+- [Configurarea cheilor](https://help.github.com/articles/generating-an-ssh-key/);
+- Principii de bază
+[1](http://www.manniwood.com/starting_a_project_with_git.html)
+[2](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
+[3](http://www.vogella.com/articles/Git/article.html);
+- Utilizarea eficientă a git-ului (
+[git flow](http://nvie.com/posts/a-successful-git-branching-model/) and
+[git book](http://git-scm.com/book)).
 
 #### Alegerea stack-ului tehnologic
 
