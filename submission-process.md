@@ -105,5 +105,5 @@ Note:
 - Cu cit mai multe detalii vei atasa la laboratorul tau, cu atit mai putine intrebari iti voi adresa in timpul prezentarii.
 - Daca careva din notiuni/cuvinte nu iti sunt cunoascute - google it.
 - Daca ai careva intrebari si nu le-ai gasit pe net, intreaba de colegii tai
-- Daca nici una din obtiuni nu lucreaza pentru tine, expediaza-mi un email cu intrebarea ta. Totusi, te-as sfatui sa gasesti singur iesire din situatie, asta te va ajuta pe viitor in viitoarea ta cariera.
+- Daca nici una din optiuni nu lucreaza pentru tine, expediaza-mi un email cu intrebarea ta. Totusi, te-as sfatui sa gasesti singur iesire din situatie, asta te va ajuta pe viitor in viitoarea ta cariera.
 - Majoritatea notiunilor si a documentatiei va fi in limba engleza, pentru a facilita verificarea acesteia.
