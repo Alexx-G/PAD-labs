@@ -5,7 +5,19 @@ dintre componentele distribuite ale unui sistem
 
 ### Prerequisites
 
-#### VCS (Git)
+#### VCS (Version Control System) (Git)
+
+Drept VCS va fi utilizat Git. Ca provider de serviciu va fi utilizat github.com
+Utilizarea VCS are ca scopuri:
+- transparența în implementarea proiectului;
+- colaborarea eficientă;
+- facilizarea revizuirii proiectului.
+
+Referințe:
+- Instalarea clientului git;
+- Configurarea cheilor;
+- Principii de bază;
+- Utilizarea eficientă a git-ului (git flow);
 
 #### Alegerea stack-ului tehnologic
 
