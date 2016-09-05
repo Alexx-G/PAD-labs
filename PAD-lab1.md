@@ -11,4 +11,10 @@ dintre componentele distribuite ale unui sistem
 
 ### Obiective
 
+- Studiul agenților de mesagerie;
+- Elaborarea unui protocol de comunicare al agentului de mesaje;
+- Tratarea concurentă a mesajelor;
+- Alegerea protocolului de transport (în dependență de scopul/domeniul de aplicare al agentului de mesaje);
+- Alerea și elaborarea strategiei de păstrare a mesajelor;
+
 ### Sarcinile și baremul
