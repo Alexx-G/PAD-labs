@@ -23,3 +23,16 @@ atunci e suficient un singur repozitoriu, însă fiecare laborator va avea ramur
     `<Grupa>_<Nume>_<Prenume>_PAD.pdf`
 - Proiectul trebuie să aibă structură rezonabilă. Diferă de la platformă la platformă, însă mai jos este descrierea generică.
 - Instrucțiuni de asamblare (if needed) și rulare a proiectului;
+
+## Procesul de elaborare a laboratorului
+
+Tot laboratorul se împarte în 3 părți:
+- Un mic test la începutul laboratorului, pe cunoașterea materialului acestuia;
+- O sarcină de bază (demonstrarea unui minim necesar de cunoștințe pentru acest laborator);
+- Sarcini adiționale;
+
+Sunt 2 opțiuni de a susține laboratorul:
+- Testul dat satisfăcător + sarcina de bază implementată **în timpul** laboratorului garantează nota 5. Îți rămîne doar să faci raportul și să-l expediezi conform descrierii de mai jos.
+- Testul + sarcina de bază (de dorit în timpul laboratorului, pentru a obține consultații) + sarcinile opționale,
+se vor aprecia conform baremului pentru lucrarea de laborator în cauză.
+Îți rămîne să faci raportul, să-l expediezi și **să-l susții** (o procedură în care analizăm împreună lucrarea și o apreciem obiectiv).
