@@ -1,6 +1,6 @@
 ## Susținerea laboratoarelor
 
-*Nota: Rapoartele pot fi expediate in limba franceza/romana/engleza, dar numai in .PDF format.
+*Nota: Rapoartele pot fi expediate in limba franceză/română/engleză, dar numai in .PDF format.
 Limba în care este scris raportul, nu influiențează nota finală.*
 
 ## Cerințe
@@ -15,12 +15,12 @@ atunci e suficient un singur repozitoriu, însă fiecare laborator va avea ramur
     - Pagina de titlu;
     - Obiectivele laboratorului;
     - Lista de task-uri implementate;
-    - Explicatiile necesare despre modul in care au fost implementate task-urile (adauga referintele necesare);
+    - Explicațiile necesare despre modul in care au fost implementate task-urile (adaugă referințele necesare);
     - Screenshot-urile care le consideri adecvate raportului (dacă sunt);
     - Concluzii - scurt (fără exagerări, minim 2-3 fraze complexe) și clar despre rezultatele obținute;
     - Bibliografie (dacă este)
     - Titlul fisierului **PDF** trebuie să fie în formatul
-    `<Grupa>_<Nume>_<Prenume>_PAD.pdf`
+    `<Grupa>_<Nume>_<Prenume>_PAD<nr lab>.pdf`
 - Proiectul trebuie să aibă structură rezonabilă. Diferă de la platformă la platformă, însă mai jos este descrierea generică.
 - Instrucțiuni de asamblare (dacă sunt necesare) și rulare a proiectului;
 
@@ -40,7 +40,7 @@ se vor aprecia conform baremului pentru lucrarea de laborator în cauză.
 ### Implementarea soluției
 Utilizarea completă a soluțiilor existente nu este admisibilă.
 Însă utilizarea unor librării care facilitează rezolvarea unei
-probleme concrete este complet ok.
+probleme concrete este acceptabil.
 De ex: Dacă modulul built-in a limbajului ales nu oferă o interfață comodă pentru a lucra cu
 parsarea XML, însă există un third-party modul care oferă o interfață comodă, atunci utilizarea acestuia este binevenită.
 
@@ -53,8 +53,8 @@ Utilizarea VCS are ca scopuri:
 
 Procesul de lucru:
 - Te întregistrezi pe github;
-- Creezi un repozitoriul nou (alegi .gitignore conform stack-ului tehnologic utilizat).
-[More info](http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files)
+- Creezi un repozitoriu nou (alegi .gitignore conform stack-ului tehnologic utilizat).
+[Mai multă info](http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files)
 - Clonezi repozitoriul pe calculatorul tău;
 - Adaugi un README.md file cu denumirea obiectului și proiectului;
 - [Faci commit](https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/)
@@ -102,7 +102,7 @@ După ce ai implementat task-urile și ai făcut raportul, asigură-te că în r
 - Adresa destinatarului: utm-labs@gavrisco.com
 
 Note:
-- Prezentarea laboratorului în Latex nu este obligatorie(dar se va aprecia cu +1), se poate de prezentat și in varianta simplă PDF
+- Prezentarea laboratorului în LaTeX nu este obligatorie(dar se va aprecia cu +1), se poate de prezentat și in varianta simplă PDF
 - Cu cît mai multe detalii vei atașa la laboratorul tău, cu atît mai puține întrebari îți voi adresa in timpul prezentării.
 - Dacă careva din noțiuni/cuvinte nu îți sunt cunoscute - google it.
 - Dacă ai careva întrebări și nu le-ai găsit pe net, întreabă de colegii tăi.
