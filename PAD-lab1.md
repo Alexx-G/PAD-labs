@@ -13,6 +13,13 @@ cu atît sunt mai mari șansele că vor fi puse întrebări legate de particular
 - Cunoștințe despre: git, protocoale de transport, agenți de mesaje (definiția, scopul, noțiuni de bază),
 date semi-structurate (XML, JSON).
 
+Note:
+- Informație despre git și linkuri utile găsești în [procesul de sustinere](submission-process.md);
+- Pentru info despre agent de mesaje consultă urmatoarele surse:
+    + [Distributed systems: principles and paradigms](https://moodle.ati.utm.md/pluginfile.php/5693/mod_glossary/attachment/8/distributed-systems-principles-and-paradigms-2nd-edition.pdf)
+    4.3 MESSAGE-ORIENTED COMMUNICATION (p 159)
+    + [Indicații metodice de pe moodle](https://moodle.ati.utm.md/mod/book/view.php?id=1613)
+
 ### Obiective
 
 - Studiul agenților de mesagerie;
