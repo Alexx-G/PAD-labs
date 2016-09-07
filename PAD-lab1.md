@@ -57,6 +57,21 @@ Cerințe concrete:
 - Adăugarea multiplelor cozi (de dorit să fie dinamic - în dependență de cererea producătorului);
 - Consumarea dintr-o coadă non existentă trebuie să productă eroare explicită, prevăzută de protocol.
 
-Bonus points:
+Bonus points (+1):
 - Asigură compatibilitatea protocolului cu clienții din etapa precedentă (fără mecanism de rutare);
 - Implementează cozi persistente și non-persistente. Acele persistente vor rămîne chiar după consumarea tuturor mesajelor, non-persistente se distrug după consumarea ultimului mesaj.
+
+##### Implementarea patternului de publisher-subscriber (Nota 8)
+
+Taskurile precedente presupun că consumatorul cerea explicit de fiecare dată un mesaj din coadă.
+Pattern-ul publisher-subscriber permite consumatorului o singură dată să se „aboneze” (subscribe) la mesaje după un anumit criteriu, și la apariția acestui mesaj, dacă sunt consumatori, el este automat scos din coadă și transmis consumatorilor respectivi.
+
+![Publisher Subscriber](images/pubsub.gif)
+
+Rolul producătorului rămîne același (se schimbă doar denumirea).
+Însă rolul consumatorului este mai simplu - el trebuie doar să se aboneze,
+să mențină conexiunea deschisă și să aștepte mesaje respective.
+
+- Ajustarea protocolului agentului de mesaje;
+- Adăugarea mecanismului de abonare (subscribe);
+- Subscribe la o coadă non existentă, la fel produce o eroare prevăzută de protocol.
