@@ -75,3 +75,24 @@ să mențină conexiunea deschisă și să aștepte mesaje respective.
 - Ajustarea protocolului agentului de mesaje;
 - Adăugarea mecanismului de abonare (subscribe);
 - Subscribe la o coadă non existentă, la fel produce o eroare prevăzută de protocol.
+
+##### Implementarea rutării avansate a mesajelor (Nota 9)
+
+Pînă la această etapă, deși existau multiple cozi, atît producătorul cît și consumatorul puteau lucra doar cu una.
+Sarcina este de a adăuga posibilitatea rutării avansate a mesajelor (expedierea în multiple cozi, abonarea la multiple cozi).
+
+Ajustează protocolul și implementează următoarele sarcini:
+- rutarea după numele cozii (posibilitatea de a specifica un pattern);
+- posiblitatea de a enumera explicit cozile;
+
+Exemplu rutării după numele cuzii:
+Să presupunem că convenția la dumele cozii e următoarea- `<numele companiei>.<numele produsului>.<tipul mesajelor - eroare, info, etc>`
+
+Atunci, vor fi disponibile următoarele variații:
+- `Google.*` - toate mesajele pentru toate produsele a companiei „Google”
+- `Google.Nest.*` - toate mesajele pentru produsul „Nest” a companiei „Google”
+- `Google.*.error` - toate messajele de tip „error” pentru compania „Google”
+- `*.*.critical-erorr` - toate mesajele pentru toate companiile de tip „critical-error”
+- etc.
+
+Acesta e doar un exemplu. Puteți oferi posibilitatea de a specifica o expresie regulată (RegEx) la expediere/abonare.
