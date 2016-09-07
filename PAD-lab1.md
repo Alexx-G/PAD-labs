@@ -1,4 +1,4 @@
-## Agent de mesagerie
+## Agent de mesaje
 
 Integrarea bazată pe agenți de mesaje care ar permite o comunicare asincronă
 dintre componentele distribuite ale unui sistem
@@ -10,6 +10,8 @@ dintre componentele distribuite ale unui sistem
 Însă, cu cît mai exotic este limbajul de programare,
 cu atît sunt mai mari șansele că vor fi puse întrebări legate de particularitățile acestuia
 (nimic grav, doar pentru a înțelege clar implementarea).
+- Cunoștințe despre: git, protocoale de transport, agenți de mesaje (definiția, scopul, noțiuni de bază),
+date semi-structurate (XML, JSON).
 
 ### Obiective
 
@@ -18,5 +20,3 @@ cu atît sunt mai mari șansele că vor fi puse întrebări legate de particular
 - Tratarea concurentă a mesajelor;
 - Alegerea protocolului de transport (în dependență de scopul/domeniul de aplicare al agentului de mesaje);
 - Alerea și elaborarea strategiei de păstrare a mesajelor;
-
-### Sarcinile și baremul
