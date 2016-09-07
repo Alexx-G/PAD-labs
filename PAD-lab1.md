@@ -96,3 +96,15 @@ Atunci, vor fi disponibile următoarele variații:
 - etc.
 
 Acesta e doar un exemplu. Puteți oferi posibilitatea de a specifica o expresie regulată (RegEx) la expediere/abonare.
+
+
+##### Implementarea mecanismului „last will and testament” (Nota 10)
+
+Mecanismul „last will and testament” (impementat în protocolul [mqtt](http://www.hivemq.com/blog/mqtt-essentials-part-9-last-will-and-testament))
+este utilizat pentru a notifica despre deconectarea anormală abonatului (subscriber).
+Adică, sunt situații cînd este necesar să cunoști dacă deconectarea abonatului a fost una așteptată sau nu. Însă pentru aceasta sistemul trebuie să deosebească noțiunea de deconectare planificată și anormală.
+
+Sarcinile:
+- Ajustează protocolul ca subscriberii, înainte de deconectare să transmită un mesaj specific;
+- Ajustează protocolul ca subscriberii la conectare să transmită: mesajul și coada pentru „last will and testament”;
+- Ajustează sistemul ca acesta să detecteze deconectări anormale și să transmită mesajul „last will and testament” (dacă este cazul).
