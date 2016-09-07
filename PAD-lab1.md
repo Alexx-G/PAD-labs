@@ -45,3 +45,18 @@ Stocarea mesajelor cu scopul asigurării robusteții cozii de mesaje. Adică, si
 - Serializeze coada de mesaje;
 - Să o stocheze persistent (memorie secundară);
 - În cazul întreruperii lucrului sistemului să restabilească (deserializeze) coada de mesaje din copia stocată.
+
+##### Implementarea mecanismului de rutare a mesajelor (Nota 7)
+
+Este necesar de a adăuga în sistem suportul la multiple cozi de mesaje (atît pentru producători, cît și pentru consumatori). Cît și a mecanismului de rutare a mesajelor la cozi.
+
+![Content Based Routing](images/router.gif)
+
+Cerințe concrete:
+- Ajustarea protocolului agentului de mesaje cu scopul de a adăuga mecanismul de rutare;
+- Adăugarea multiplelor cozi (de dorit să fie dinamic - în dependență de cererea producătorului);
+- Consumarea dintr-o coadă non existentă trebuie să productă eroare explicită, prevăzută de protocol.
+
+Bonus points:
+- Asigură compatibilitatea protocolului cu clienții din etapa precedentă (fără mecanism de rutare);
+- Implementează cozi persistente și non-persistente. Acele persistente vor rămîne chiar după consumarea tuturor mesajelor, non-persistente se distrug după consumarea ultimului mesaj.
