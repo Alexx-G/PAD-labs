@@ -1,4 +1,4 @@
-## Submission Process
+## Susținerea laboratoarelor
 
 *Nota: Rapoartele pot fi expediate in limba franceza/romana/engleza, dar numai in .PDF format.
 Limba în care este scris raportul, nu influiențează nota finală.*
@@ -9,7 +9,7 @@ Limba în care este scris raportul, nu influiențează nota finală.*
 - Codul sursă a proiectului trebuie să fie păstrat pe GitHub;
 Dacă lucrările de laborator reprezintă o continuitate,
 atunci e suficient un singur repozitoriu, însă fiecare laborator va avea ramură (branch) de bază aparte. Master conține ultima versiune stabilă, anume master se va analiza în timpul susținerii.
-- Proiectele cu un singur (sau foarte puține) commit nu se acceptă, sau se acceptă cu condiția atenției triple la susținere;
+- Proiectele cu un singur commit (sau foarte puține) nu se acceptă, sau se acceptă cu condiția atenției triple la susținere;
 - Raportul trebuie să fie expediat în formatul **PDF**.
 - Raportul trebuie să conțină (template în LaTeX în acest repo):
     - Pagina de titlu;
@@ -22,7 +22,7 @@ atunci e suficient un singur repozitoriu, însă fiecare laborator va avea ramur
     - Titlul fisierului **PDF** trebuie să fie în formatul
     `<Grupa>_<Nume>_<Prenume>_PAD.pdf`
 - Proiectul trebuie să aibă structură rezonabilă. Diferă de la platformă la platformă, însă mai jos este descrierea generică.
-- Instrucțiuni de asamblare (if needed) și rulare a proiectului;
+- Instrucțiuni de asamblare (dacă sunt necesare) și rulare a proiectului;
 
 ## Procesul de elaborare a laboratorului
 
@@ -62,19 +62,20 @@ Procesul de lucru:
 - Commit and push to master;
 - Faci un branch nou pentru laboratorul respectiv si te schimbi pe dinsul (`man git-checkout`);
 - Continui implementarea, făcînd commit-uri la fiecare pas logic (dar nu mai mult de 3 fișiere sau 50 lines of code într-un commit);
-- La fiecare etapă semnificativă, push la ramura curentă pe server;
+- La fiecare etapă semnificativă, push la ramura curentă pe server (dacă ai conexiune la internet).
+Scopul este ca pe server să ai ultipa copie a lucrului tău;
 - Dacă este necesar, adaugă descrierea la instrucțiuni/use-case-uri specifice și altă informație utilă despre implementare în cauză în README.md;
-- La finisarea lucrării, fă merge la schimbările din ramura laboratorului în master. Apoi fă un [tag nou](https://git-scm.com/book/en/v2/Git-Basics-Tagging) care să aibă denumirea `L<nr lab>` și push la master pe server;
+- La finisarea lucrării, fă „merge” la schimbările din ramura laboratorului în master. Apoi fă un [tag nou](https://git-scm.com/book/en/v2/Git-Basics-Tagging) care să aibă denumirea `L<nr lab>` și push la master pe server;
 
-Astfel procesul tău de lucru va fi la maxim transparent și colaborarea în proiect va fi posibilă foarte ușor.
+Astfel procesul tău de lucru va fi transparent la maxim și colaborarea în proiect va fi posibilă foarte ușor.
 
 **Referințe:**
 - [Instalarea clientului git](https://git-scm.com/downloads);
 - [Configurarea cheilor](https://help.github.com/articles/generating-an-ssh-key/);
 - Principii de bază
-[1](http://www.manniwood.com/starting_a_project_with_git.html)
-[2](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
-[3](http://www.vogella.com/articles/Git/article.html);
+[Getting started](http://www.manniwood.com/starting_a_project_with_git.html)
+[Git Book](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
+[Git Tutorial](http://www.vogella.com/articles/Git/article.html);
 - Utilizarea eficientă a git-ului (
 [git flow](http://nvie.com/posts/a-successful-git-branching-model/) and
 [git book](http://git-scm.com/book));
@@ -94,16 +95,16 @@ Dacă platforma aleasă are o structură recomandată, atunci aceasta trebuie fo
 Nu ezitați să vă consultați dacă nu sunteți siguri la acest capitol.
 
 #### Expedierea raportului și susținerea
-După ce ai implementat task-urile și ai făcut raportul, asigură-te că în repozitoriul să află versiunea actuală a proiectului pe master, trimite-mi un e-mail:
+După ce ai implementat task-urile și ai făcut raportul, asigură-te că în repozitoriul se află versiunea actuală a proiectului pe master, trimite-mi un e-mail:
 - Atașează raportul în formatul **PDF**,
 - Subiectul email-ului `[PAD][<grupa>][Lab<nr lab>][Nume Prenume]`,
 - Linkul către repozitoriul cu lucrarea de laborator,
-- Adresa destinatarului: alexxg.tmd+utm@gmail.com
+- Adresa destinatarului: utm-labs@gavrisco.com
 
 Note:
-- Prezentarea laboratorului in Latex nu este obligatorie(dar se va aprecia cu +1), se poate de prezentat si in varianta simpla PDF
-- Cu cit mai multe detalii vei atasa la laboratorul tau, cu atit mai putine intrebari iti voi adresa in timpul prezentarii.
-- Daca careva din notiuni/cuvinte nu iti sunt cunoascute - google it.
-- Daca ai careva intrebari si nu le-ai gasit pe net, intreaba de colegii tai
-- Daca nici una din optiuni nu lucreaza pentru tine, expediaza-mi un email cu intrebarea ta. Totusi, te-as sfatui sa gasesti singur iesire din situatie, asta te va ajuta pe viitor in viitoarea ta cariera.
-- Majoritatea notiunilor si a documentatiei va fi in limba engleza, pentru a facilita verificarea acesteia.
+- Prezentarea laboratorului în Latex nu este obligatorie(dar se va aprecia cu +1), se poate de prezentat și in varianta simplă PDF
+- Cu cît mai multe detalii vei atașa la laboratorul tău, cu atît mai puține întrebari îți voi adresa in timpul prezentării.
+- Dacă careva din noțiuni/cuvinte nu îți sunt cunoscute - google it.
+- Dacă ai careva întrebări și nu le-ai găsit pe net, întreabă de colegii tăi.
+- Dacă nici una din opțiuni nu lucrează pentru tine, expediază-mi un email cu întrebarea ta. Totuși, te-aș sfătui sa găsești singur ieșire din situație, asta te va ajuta in viitoarea ta carieră.
+- Majoritatea noțiunilor si a documentației va fi in limba engleză, pentru a facilita verificarea acesteia.
