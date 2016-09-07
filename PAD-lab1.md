@@ -38,3 +38,10 @@ Implementează o coadă de mesaje care poate avea atît multipli productărori (
 Sistemul trebuie să permită:
 - plasarea unui mesaj în coadă (concurent de mai mulți producători);
 - consumarea mesajelor (concurent de mai mulți consumatori);
+
+##### Implementarea mecanismului de stocare a mesajelor (Nota 6)
+
+Stocarea mesajelor cu scopul asigurării robusteții cozii de mesaje. Adică, sistemul trebuie să:
+- Serializeze coada de mesaje;
+- Să o stocheze persistent (memorie secundară);
+- În cazul întreruperii lucrului sistemului să restabilească (deserializeze) coada de mesaje din copia stocată.
