@@ -5,7 +5,7 @@ dintre componentele distribuite ale unui sistem
 
 ### Prerequisites
 
-- VCS (Version Control System) Git;
+- VCS (Version Control System) Git - vezi [info din procesul de susținere](submission-process.md);
 - Limbajul de programare: nu este restricționat.
 Însă, cu cît mai exotic este limbajul de programare,
 cu atît sunt mai mari șansele că vor fi puse întrebări legate de particularitățile acestuia
