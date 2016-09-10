@@ -10,7 +10,7 @@ Limba în care este scris raportul, nu influențează nota finală.*
 Dacă lucrările de laborator reprezintă o continuitate,
 atunci e suficient un singur repozitoriu, însă fiecare laborator va avea ramură (branch) de bază aparte. Master conține ultima versiune stabilă, anume master se va analiza în timpul susținerii.
 - Proiectele cu un singur commit (sau foarte puține) nu se acceptă, sau se acceptă cu condiția atenției triple la susținere;
-- Raportul trebuie să fie expediat în formatul **PDF**.
+- Raportul trebuie să fie expediat în formatul **PDF** și este important să nu fie **arhivat**.
 - Raportul trebuie să conțină (template în LaTeX în acest repo):
     - Pagina de titlu;
     - Obiectivele laboratorului;
