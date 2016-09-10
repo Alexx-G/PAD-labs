@@ -73,6 +73,7 @@ Scopul este ca pe server să ai ultipa copie a lucrului tău;
 Astfel procesul tău de lucru va fi transparent la maxim și colaborarea în proiect va fi posibilă foarte ușor.
 
 **Referințe:**
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 - [Instalarea clientului git](https://git-scm.com/downloads);
 - [Configurarea cheilor](https://help.github.com/articles/generating-an-ssh-key/);
 - Principii de bază
