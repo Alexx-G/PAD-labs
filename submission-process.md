@@ -53,8 +53,11 @@ Utilizarea VCS are ca scopuri:
 
 Procesul de lucru:
 - Te întregistrezi pe github;
-- Creezi un repozitoriu nou (alegi .gitignore conform stack-ului tehnologic utilizat).
+- Creezi un repozitoriu public nou (alegi .gitignore conform stack-ului tehnologic utilizat).
 [Mai multă info](http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files)
+Dacă dorești să lucrezi în repozitoriul privat, atunci îmi expediezi un email la adresa
+[utm-labs@gavrisco.com](utm-labs@gavrisco.com) cu subiectul [PAD][<grupa>] și în text indici:
+email-ul cu care te-ai înregistrat pe github, numele/prenumele și denumirea repozitoriului;
 - Clonezi repozitoriul pe calculatorul tău;
 - Adaugi un README.md file cu denumirea obiectului și proiectului;
 - [Faci commit](https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/)
@@ -99,7 +102,7 @@ După ce ai implementat task-urile și ai făcut raportul, asigură-te că în r
 - Atașează raportul în formatul **PDF**,
 - Subiectul email-ului `[PAD][<grupa>][Lab<nr lab>][Nume Prenume]`,
 - Linkul către repozitoriul cu lucrarea de laborator,
-- Adresa destinatarului: utm-labs@gavrisco.com
+- Adresa destinatarului: [utm-labs@gavrisco.com](mailto:utm-labs@gavrisco.com)
 
 Note:
 - Prezentarea laboratorului în LaTeX nu este obligatorie(dar se va aprecia cu +1), se poate de prezentat și in varianta simplă PDF
