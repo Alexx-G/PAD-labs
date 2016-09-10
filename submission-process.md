@@ -105,6 +105,25 @@ După ce ai implementat task-urile și ai făcut raportul, asigură-te că în r
 - Linkul către repozitoriul cu lucrarea de laborator,
 - Adresa destinatarului: [utm-labs@gavrisco.com](mailto:utm-labs@gavrisco.com)
 
+##### Deadline-uri și penalizări
+Este **binevenit** să prezinți laboratorul la începutul următorui laborator
+(de exemplu: să prezinți laboratorul Nr1, cînd vom avea perechi pentru laboratorul 2).
+Dacă te reții cu mai mult de 2 laboratoare, atunci șansele pentru nota maximă,
+se vor diminua semnificativ (de ex prezinți laboratorul Nr1 după ce am trecut laboratorul 3).
+
+*Notă: Este mai bine să prezinți la timp laboratorul incomplet, decît laboratorul aproape complet,
+însă cu o întîrziere mare.*
+
+Plagierea se **sancționează** cu anularea laboratorului pentru tine și atenție
+sporită pentru toate **susținerile** ulterioare.
+Dacă simți că nu reușești să faci laboratorul la timp cu puterile proprii,
+fii activ, adresează întrebări și alege sarcinile care crezi că le reușești.
+În așa mod, cu siguranță vei avea notă satisfăcătoare + vei căpăta mai multe cunoștințe,
+decît din plagiere.
+
+**Important: Încercînd să prezinți o lucrare străină, ca fiind proprie,
+vei cheltui mai mult timp și efort, decît să faci cinstit sarcina de bază + testul.**
+
 Note:
 - Prezentarea laboratorului în LaTeX nu este obligatorie(dar se va aprecia cu +1), se poate de prezentat și in varianta simplă PDF
 - Cu cît mai multe detalii vei atașa la laboratorul tău, cu atît mai puține întrebari îți voi adresa in timpul prezentării.
