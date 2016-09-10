@@ -5,7 +5,7 @@ Limba în care este scris raportul, nu influențează nota finală.*
 
 ## Cerințe
 
-- Vii la laborator deja informat despre sarcinile acestuia;
+- Vii la laborator deja informat despre sarcinile acestuia (fiindcă vei avea test la începutul fiecărui laborator);
 - Codul sursă a proiectului trebuie să fie păstrat pe GitHub;
 Dacă lucrările de laborator reprezintă o continuitate,
 atunci e suficient un singur repozitoriu, însă fiecare laborator va avea ramură (branch) de bază aparte. Master conține ultima versiune stabilă, anume master se va analiza în timpul susținerii.
@@ -28,6 +28,7 @@ atunci e suficient un singur repozitoriu, însă fiecare laborator va avea ramur
 
 Tot laboratorul se împarte în 3 părți:
 - Un mic test la începutul laboratorului, pe cunoașterea materialului acestuia;
+Testul este de 5-10 minute și conține cîteva întrebări de bază asupra laboratorului.
 - O sarcină de bază (demonstrarea unui minim necesar de cunoștințe pentru acest laborator);
 - Sarcini adiționale;
 
