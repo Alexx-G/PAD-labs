@@ -33,7 +33,7 @@ Tot laboratorul se împarte în 3 părți:
 
 Sunt 2 opțiuni de a susține laboratorul:
 - Testul dat satisfăcător + sarcina de bază implementată **în timpul** laboratorului garantează nota 5. Îți rămîne doar să faci raportul și să-l expediezi conform descrierii de mai jos.
-- Testul + sarcina de bază (de dorit în timpul laboratorului, pentru a obține consultații) + sarcinile opționale,
+- Testul + sarcina de bază implementată **în timpul** laboratorului + sarcinile opționale,
 se vor aprecia conform baremului pentru lucrarea de laborator în cauză.
 Îți rămîne să faci raportul, să-l expediezi și **să-l susții** (o procedură în care analizăm împreună lucrarea și o apreciem obiectiv).
 
