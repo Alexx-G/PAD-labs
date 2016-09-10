@@ -34,7 +34,9 @@ Toate sarcinile reprezintă o continuitate. Adică, sarcina pentru nota 6 reprez
 
 ##### *Sarcina de bază* - Implementarea unei cozi de mesaje(nota 5)
 
-- Elaborarea protocolului de comunicare;
+- Elaborarea protocolului de comunicare.
+Descrie protocolul într-un fișier [markdown](https://guides.github.com/features/mastering-markdown/)
+și salvează-l în mapa „docs” din repozitoriul tău;
 - Alegerea protocului de transport și argumentarea alegerii;
 - Implementarea cozii de mesaje (utilizînd colecții de date concurente)
 
