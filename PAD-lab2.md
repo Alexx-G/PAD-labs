@@ -14,3 +14,19 @@ Scopul lucrării de laborator rezidă în studiul protocoalelor de transport TCP
 - Procesarea colecțiilor de obiecte.
 
 ### Sarcinile și baremul
+
+##### Implementarea unui sistem informațional ce oferă colecții distribuite de date (nota 5)
+
+- Elaborarea protocolului de comunicare.
+Descrie protocolul într-un fișier [markdown](https://guides.github.com/features/mastering-markdown/)
+și salvează-l în mapa „docs” din repozitoriul tău;
+- Alegerea protocului de transport și argumentarea alegerii;
+- Implementarea cozii de mesaje (utilizînd colecții de date concurente)
+
+Implementează o coadă de mesaje care poate avea atît multipli productărori (expeditori) de mesaje, cît și multipli consumatori de mesaje.
+
+![Coadă de mesaje](images/message-queue.gif)
+
+Sistemul trebuie să permită:
+- plasarea unui mesaj în coadă (concurent de mai mulți producători);
+- consumarea mesajelor (concurent de mai mulți consumatori);
