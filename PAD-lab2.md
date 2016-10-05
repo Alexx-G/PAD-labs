@@ -1,30 +1,35 @@
 ## Colecții distribuite de date
 
+Scopul lucrării de laborator rezidă în studiul protocoalelor de transport TCP/IP în contextul dezvoltării unei aplicații conținând colecții distribuite de date.
+
 ### Prerequisites
 
 - VCS (Version Control System) Git - vezi [info din procesul de susținere](submission-process.md);
-- Limbajul de programare: nu este restricționat.
-Însă, cu cît mai exotic este limbajul de programare,
-cu atît sunt mai mari șansele că vor fi puse întrebări legate de particularitățile acestuia
-(nimic grav, doar pentru a înțelege clar implementarea).
-- Cunoștințe despre: git, protocoale de transport, agenți de mesaje (definiția, scopul, noțiuni de bază),
-date semi-structurate (XML, JSON).
+- Cunoștințe despre: git, protocoale de transport, date semi-structurate (XML, JSON).
+- Cunoștințe de bază despre sisteme distribuite - noțiune și caracteristici.
 
 Note:
 - Informație despre git și linkuri utile găsești în [procesul de sustinere](submission-process.md);
-- Pentru info despre agent de mesaje consultă urmatoarele surse:
+- Pentru info despre sisteme distribuite consultă urmatoarele surse:
     + [Distributed systems: principles and paradigms](https://moodle.ati.utm.md/pluginfile.php/5693/mod_glossary/attachment/8/distributed-systems-principles-and-paradigms-2nd-edition.pdf)
-    4.3 MESSAGE-ORIENTED COMMUNICATION (p 159)
-    + [Indicații metodice de pe moodle](https://moodle.ati.utm.md/mod/book/view.php?id=1613)
+    1.1 DEFINITION OF A DISTRIBUTED SYSTEM (p 2)
+    1.2 GOALS
+    + [Indicații metodice de pe moodle](https://moodle.ati.utm.md/mod/book/view.php?id=1648)
+
 
 ### Obiective
 
-- Studiul agenților de mesagerie;
-- Elaborarea unui protocol de comunicare al agentului de mesaje;
-- Tratarea concurentă a mesajelor;
-- Alegerea protocolului de transport (în dependență de scopul/domeniul de aplicare al agentului de mesaje);
-- Alerea și elaborarea strategiei de păstrare a mesajelor;
+- Aplicarea protocolului UDP în transmisiuni unicast și multicast;
+- Aplicarea protocolului TCP în transmisiuni de date;
+- Procesarea colecțiilor de obiecte.
 
 ### Sarcinile și baremul
-Sarcina de bază este minim necesar pentru această lucrare de laborator.
-Toate sarcinile reprezintă o continuitate. Adică, sarcina pentru nota 6 reprezintă cîteva sarcini care se vor baza pe sarcina pentru nota 5.
+
+##### Implementarea unui sistem informațional ce oferă colecții distribuite de date (nota 5-6)
+
+- Elaborarea protocolulului de comunicare între client și sistem informațional distribuit;
+- Elaborarea și implementarea nodului informațional;
+- Determinarea nodului principal utilizînd UDP multicast;
+- Interogarea nodului principal selectat utilizînd TCP;
+- Stabilirea legăturilor între noduri informaționale și interogarea
+„legăturilor” de către nodul principal.

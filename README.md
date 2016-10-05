@@ -7,6 +7,7 @@ For the submission process check out the file [submission-process.md](submission
 
 And a brief description of the labs you can find in next docs:
 - [PAD-lab1.md](PAD-lab1.md)
+- [PAD-lab2.md](PAD-lab2.md)
 
 
 Thanks to [BestMujik](https://github.com/BestMujik/) for the templates.
