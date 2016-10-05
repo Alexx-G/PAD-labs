@@ -33,3 +33,22 @@ Note:
 - Interogarea nodului principal selectat utilizînd TCP;
 - Stabilirea legăturilor între noduri informaționale și interogarea
 „legăturilor” de către nodul principal.
+
+##### Îmbunătățirea configurabilității sistemului distribuit (nota 7)
+
+- Preluarea configurației sistemului distribuit dintr-un fișier de configurații.
+Astfel va fi posibil de schimbat schema sistemului distribuit doar modificînd
+un singur fișier cu configurația acestuia.
+
+##### Elaborarea și implementarea unui simplu limbaj de interogări (nota 8)
+Posibilitatea de a procesa parțial colecția distribuită de date pe nodurile informaționale.
+Adică, nodurile informaționale trebuie să accepte construcții specifice, pentru
+a efectua operații sortare, filtrare sau grupare nemijlocit pe nodurile informaționale.
+Se acceptă orice [DSL](https://en.wikipedia.org/wiki/Domain-specific_language)
+, începînd de la simplu dicționar pînă la pseudo-SQL.
+
+Cerințe către sistem:
+- Oferirea interfeței de interogare a nodurilor cu cel puțin una din operații
+    - filtrare,
+    - sortare,
+    - grupare
