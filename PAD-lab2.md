@@ -52,3 +52,9 @@ Cerințe către sistem:
     - filtrare,
     - sortare,
     - grupare
+
+##### Înlocuirea UDP multicast cu un mediator/broker (nota 9-10)
+Folosind UDP pentru a determina nodul principal, sistemul devine susceptibil la
+pierderi de date + problema firewall-urilor. Pentru a rezolva această problemă,
+se propune introducerea unui nou component intermediar (mediator/broker), care
+va lucra folosind TCP și va garanta comunicarea sigură între client și DIS.
