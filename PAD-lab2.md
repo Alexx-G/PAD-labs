@@ -8,6 +8,15 @@ Scopul lucrării de laborator rezidă în studiul protocoalelor de transport TCP
 - Cunoștințe despre: git, protocoale de transport, date semi-structurate (XML, JSON).
 - Cunoștințe de bază despre sisteme distribuite - noțiune și caracteristici.
 
+Note:
+- Informație despre git și linkuri utile găsești în [procesul de sustinere](submission-process.md);
+- Pentru info despre sisteme distribuite consultă urmatoarele surse:
+    + [Distributed systems: principles and paradigms](https://moodle.ati.utm.md/pluginfile.php/5693/mod_glossary/attachment/8/distributed-systems-principles-and-paradigms-2nd-edition.pdf)
+    1.1 DEFINITION OF A DISTRIBUTED SYSTEM (p 2)
+    1.2 GOALS
+    + [Indicații metodice de pe moodle](https://moodle.ati.utm.md/mod/book/view.php?id=1648)
+
+
 ### Obiective
 
 - Aplicarea protocolului UDP în transmisiuni unicast și multicast;
