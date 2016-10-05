@@ -6,6 +6,7 @@ Scopul lucrării de laborator rezidă în studiul protocoalelor de transport TCP
 
 - VCS (Version Control System) Git - vezi [info din procesul de susținere](submission-process.md);
 - Cunoștințe despre: git, protocoale de transport, date semi-structurate (XML, JSON).
+- Cunoștințe de bază despre sisteme distribuite - noțiune și caracteristici.
 
 ### Obiective
 
@@ -15,18 +16,11 @@ Scopul lucrării de laborator rezidă în studiul protocoalelor de transport TCP
 
 ### Sarcinile și baremul
 
-##### Implementarea unui sistem informațional ce oferă colecții distribuite de date (nota 5)
+##### Implementarea unui sistem informațional ce oferă colecții distribuite de date (nota 5-6)
 
-- Elaborarea protocolului de comunicare.
-Descrie protocolul într-un fișier [markdown](https://guides.github.com/features/mastering-markdown/)
-și salvează-l în mapa „docs” din repozitoriul tău;
-- Alegerea protocului de transport și argumentarea alegerii;
-- Implementarea cozii de mesaje (utilizînd colecții de date concurente)
-
-Implementează o coadă de mesaje care poate avea atît multipli productărori (expeditori) de mesaje, cît și multipli consumatori de mesaje.
-
-![Coadă de mesaje](images/message-queue.gif)
-
-Sistemul trebuie să permită:
-- plasarea unui mesaj în coadă (concurent de mai mulți producători);
-- consumarea mesajelor (concurent de mai mulți consumatori);
+- Elaborarea protocolulului de comunicare între client și sistem informațional distribuit;
+- Elaborarea și implementarea nodului informațional;
+- Determinarea nodului principal utilizînd UDP multicast;
+- Interogarea nodului principal selectat utilizînd TCP;
+- Stabilirea legăturilor între noduri informaționale și interogarea
+„legăturilor” de către nodul principal.
