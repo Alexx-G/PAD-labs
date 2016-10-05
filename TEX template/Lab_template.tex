@@ -3,7 +3,7 @@
 \usepackage{pdfpages}
 \usepackage{eso-pic}
 
-  
+
 \begin{document}
 
 % TITLE
@@ -13,15 +13,16 @@
 \newpage
 
 \pagenumbering{arabic}
-\setcounter{page}{10}
+\setcounter{page}{1}
 \setcounter{secnumdepth}{4}
 
+\tableofcontents
 \addtocontents{toc}{\protect\thispagestyle{empty}} % no page number on the table of contents page
 \cleardoublepage
 
 
 %INTRODUCERE
-%\setcounter{page}{17} 
+%\setcounter{page}{17}
 \phantomsection
 \addcontentsline{toc}{section}{Introduction}
 \input{Introduction.tex}
@@ -42,6 +43,6 @@
 \addcontentsline{toc}{section}{References}
 \input{biblio.tex}
 \cleardoublepage
-   
- 
+
+
 \end{document}
