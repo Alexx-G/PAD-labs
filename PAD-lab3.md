@@ -16,6 +16,7 @@ Note:
     1.1 DEFINITION OF A DISTRIBUTED SYSTEM (p 2);
     1.2 GOALS
     + [Indicații metodice de pe moodle](https://moodle.ati.utm.md/mod/book/view.php?id=1727&chapterid=15)
+    + [Note de curs despre schimb de date](https://moodle.ati.utm.md/mod/book/view.php?id=2019)
 
 
 ### Obiective
