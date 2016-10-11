@@ -1,4 +1,4 @@
-## Procesarea datelor distribuite semi-structurat
+## Procesarea datelor distribuite semi-structurate
 
 Scopul lucrării rezidă în studiul modelelor pentru procesarea datelor XML (DOM/ SAX) și JSON la distribuirea acestora.
 
