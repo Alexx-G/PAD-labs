@@ -5,6 +5,7 @@
 To deal with dependencies you should either:
     - install full distribution of the LaTeX (`texlive-full`);
     - install at least the following packages - `texlive-latex-extra texlive-lang-european`;
+    - install the package `texlive-lang-french` for the support of the franch language;
 - [Getting started](https://www.latex-project.org/help/documentation/);
 
 #### Build PDF from sources
