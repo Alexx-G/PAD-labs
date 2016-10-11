@@ -5,9 +5,9 @@ Scopul lucrării rezidă în studiul modelelor pentru procesarea datelor XML (DO
 ### Prerequisites
 
 - VCS (Version Control System) Git - vezi [info din procesul de susținere](submission-process.md);
-- Cunoștințe despre: git, protocoale de transport, date semi-structurate (XML, JSON).
-- Cunoștințe de bază despre sisteme distribuite - noțiune și caracteristici.
-- Cunoștințe de bază despre t
+- Cunoștințe despre: date semi-structurate (XML, JSON).
+- Cunoștințe de bază despre sisteme distribuite - noțiune și caracteristici;
+- Cunoștințe de bază despre modalități de validare a datelor în format XML;
 
 Note:
 - Informație despre git și linkuri utile găsești în [procesul de sustinere](submission-process.md);
