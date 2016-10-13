@@ -58,3 +58,9 @@ Folosind UDP pentru a determina nodul principal, sistemul devine susceptibil la
 pierderi de date + problema firewall-urilor. Pentru a rezolva această problemă,
 se propune introducerea unui nou component intermediar (mediator/broker), care
 va lucra folosind TCP și va garanta comunicarea sigură între client și DIS.
+
+#### Structuri DIS
+
+Alege structura în dependență de numărul ordine.
+
+![Structuri DIS](images/dis-structures.jpg)
