@@ -9,6 +9,7 @@ And a brief description of the labs you can find in next docs:
 - [PAD-lab1.md](PAD-lab1.md)
 - [PAD-lab2.md](PAD-lab2.md)
 - [PAD-lab3.md](PAD-lab3.md)
+- [PAD-lab4.md](PAD-lab4.md)
 
 
 Thanks to [BestMujik](https://github.com/BestMujik/) for the templates.
