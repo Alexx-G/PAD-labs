@@ -92,16 +92,21 @@ Rolul producătorului rămîne același (se schimbă doar denumirea).
 - Adăugarea mecanismului de abonare (subscribe);
 - Abonarea la un topic inexistent (topic pentru care nu au fost expediate mesaje) trebuie să fie reflectată/tratată de către broker și clienți.
 
+**Notă:** topic reprezintă un identificator al unui canal de comunicare între producători/abonați prin broker.
+Rolul topic-ului este similar cu rolul cozilor din etapa precedentă - gruparea logică a mesajelor cu scopul rutării mai flexibile. Doar că topic-ul permite abstractizarea de la cozi ca mecanism de stocarea și nu impune restricții la implementarea acestuia.
+
+**Notă 2:** Persistența în acest caz suferă schimbări. Persistența la etapele precedente era la nivel de cozi - menținerea cozilor în memorie chiar dacă mesajele au fost consumate. În acest caz are sens de trecut persistența la nivel de mesaje - păstrarea mesajelor care nu au fost transmise niciunui consumator (sau alte interpretări care au bază rațională).
+
 ##### Implementarea rutării avansate a mesajelor (Nota 9)
 
-Pînă la această etapă, deși existau multiple cozi, atît producătorul cît și consumatorul puteau lucra doar cu una.
-Sarcina este de a adăuga posibilitatea rutării avansate a mesajelor (expedierea în multiple cozi, abonarea la multiple cozi).
+Pînă la această etapă, deși existau multiple topic-uri, atît producătorul cît și consumatorul puteau lucra doar cu unul.
+Sarcina este de a adăuga posibilitatea rutării avansate a mesajelor (abonarea la multiple topic-uri).
 
-Ajustează protocolul și implementează următoarele sarcini:
-- rutarea după numele cozii (posibilitatea de a specifica un pattern);
-- posiblitatea de a enumera explicit cozile;
+Ajustează protocolul și implementează una următoarele sarcini:
+- rutarea după topic (posibilitatea de a specifica un pattern);
+- posiblitatea de a enumera explicit topic-urile;
 
-Exemplu rutării după numele cuzii:
+Exemplu rutării după topic:
 Să presupunem că convenția la dumele cozii e următoarea- `<numele companiei>.<numele produsului>.<tipul mesajelor - eroare, info, etc>`
 
 Atunci, vor fi disponibile următoarele variații:
