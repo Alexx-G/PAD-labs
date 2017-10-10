@@ -81,6 +81,7 @@ Pattern-ul publisher-subscriber permite consumatorului o singură dată să se �
 și la apariția unui astfel de mesaj, dacă sunt consumatori, el este automat transmis consumatorilor respectivi.
 
 Astfel, dispare necesitatea în cozi propriu-zise - mesajele sunt rutate după *topic* (la etapa precedentă denumirea cozii și avea rolul unui topic) și livrate consumatorilor care s-au abonat la *topic*-ul respectiv.
+Cititorii atenți vor observa pe schema de mai jos că mesajele sunt *multiplexate* pentru a fi expediate tuturor abonaților la topic-ul respectiv (spre deosebire de broker bazat pe cozi, de la etapa precedentă, în care un mesaj este livrat unui singur consumator). Însă pot fi și alte abordări în care rutarea mesajelor este separată de consumarea mesajelor ([vezi arhitectura din RabbitMQ](https://www.rabbitmq.com/getstarted.html)).
 
 ![Publisher Subscriber](images/pubsub.gif)
 
