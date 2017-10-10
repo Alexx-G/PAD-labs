@@ -76,17 +76,21 @@ Bonus points (+1):
 ##### Implementarea patternului de publisher-subscriber (Nota 8)
 
 Taskurile precedente presupun că consumatorul cerea explicit de fiecare dată un mesaj din coadă.
-Pattern-ul publisher-subscriber permite consumatorului o singură dată să se „aboneze” (subscribe) la mesaje după un anumit criteriu, și la apariția acestui mesaj, dacă sunt consumatori, el este automat scos din coadă și transmis consumatorilor respectivi.
+Iar însăși *coada* reprezenta un *buffer* de mesaje care avea o denumire pentru routing.
+Pattern-ul publisher-subscriber permite consumatorului o singură dată să se „aboneze” (subscribe) la mesaje după un anumit criteriu (de exemplut *topic* mesajului),
+și la apariția unui astfel de mesaj, dacă sunt consumatori, el este automat transmis consumatorilor respectivi.
+
+Astfel, dispare necesitatea în cozi propriu-zise - mesajele sunt rutate după *topic* (la etapa precedentă denumirea cozii și avea rolul unui topic) și livrate consumatorilor care s-au abonat la *topic*-ul respectiv.
 
 ![Publisher Subscriber](images/pubsub.gif)
 
 Rolul producătorului rămîne același (se schimbă doar denumirea).
 Însă rolul consumatorului este mai simplu - el trebuie doar să se aboneze,
-să mențină conexiunea deschisă și să aștepte mesaje respective.
+**să mențină conexiunea deschisă** și să aștepte mesaje respective.
 
 - Ajustarea protocolului agentului de mesaje;
 - Adăugarea mecanismului de abonare (subscribe);
-- Subscribe la o coadă non existentă, la fel produce o eroare prevăzută de protocol.
+- Abonarea la un topic inexistent (topic pentru care nu au fost expediate mesaje) trebuie să fie reflectată/tratată de către broker și clienți.
 
 ##### Implementarea rutării avansate a mesajelor (Nota 9)
 
