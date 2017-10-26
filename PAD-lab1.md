@@ -76,29 +76,39 @@ Bonus points (+1):
 ##### Implementarea patternului de publisher-subscriber (Nota 8)
 
 Taskurile precedente presupun că consumatorul cerea explicit de fiecare dată un mesaj din coadă.
-Pattern-ul publisher-subscriber permite consumatorului o singură dată să se „aboneze” (subscribe) la mesaje după un anumit criteriu, și la apariția acestui mesaj, dacă sunt consumatori, el este automat scos din coadă și transmis consumatorilor respectivi.
+Iar însăși *coada* reprezenta un *buffer* de mesaje care avea o denumire pentru routing.
+Pattern-ul publisher-subscriber permite consumatorului o singură dată să se „aboneze” (subscribe) la mesaje după un anumit criteriu (de exemplut *topic* mesajului),
+și la apariția unui astfel de mesaj, dacă sunt consumatori, el este automat transmis consumatorilor respectivi.
+
+Astfel, dispare necesitatea în cozi propriu-zise - mesajele sunt rutate după *topic* (la etapa precedentă denumirea cozii și avea rolul unui topic) și livrate consumatorilor care s-au abonat la *topic*-ul respectiv.
+Cititorii atenți vor observa pe schema de mai jos că mesajele sunt *multiplexate* pentru a fi expediate tuturor abonaților la topic-ul respectiv (spre deosebire de broker bazat pe cozi, de la etapa precedentă, în care un mesaj este livrat unui singur consumator). Însă pot fi și alte abordări în care rutarea mesajelor este separată de consumarea mesajelor ([vezi arhitectura din RabbitMQ](https://www.rabbitmq.com/getstarted.html)).
 
 ![Publisher Subscriber](images/pubsub.gif)
 
 Rolul producătorului rămîne același (se schimbă doar denumirea).
 Însă rolul consumatorului este mai simplu - el trebuie doar să se aboneze,
-să mențină conexiunea deschisă și să aștepte mesaje respective.
+**să mențină conexiunea deschisă** și să aștepte mesaje respective.
 
 - Ajustarea protocolului agentului de mesaje;
 - Adăugarea mecanismului de abonare (subscribe);
-- Subscribe la o coadă non existentă, la fel produce o eroare prevăzută de protocol.
+- Abonarea la un topic inexistent (topic pentru care nu au fost expediate mesaje) trebuie să fie reflectată/tratată de către broker și clienți.
+
+**Notă:** topic reprezintă un identificator al unui canal de comunicare între producători/abonați prin broker.
+Rolul topic-ului este similar cu rolul cozilor din etapa precedentă - gruparea logică a mesajelor cu scopul rutării mai flexibile. Doar că topic-ul permite abstractizarea de la cozi ca mecanism de stocarea și nu impune restricții la implementarea acestuia.
+
+**Notă 2:** Persistența în acest caz suferă schimbări. Persistența la etapele precedente era la nivel de cozi - menținerea cozilor în memorie chiar dacă mesajele au fost consumate. În acest caz are sens de trecut persistența la nivel de mesaje - păstrarea mesajelor care nu au fost transmise niciunui consumator (sau alte interpretări care au bază rațională).
 
 ##### Implementarea rutării avansate a mesajelor (Nota 9)
 
-Pînă la această etapă, deși existau multiple cozi, atît producătorul cît și consumatorul puteau lucra doar cu una.
-Sarcina este de a adăuga posibilitatea rutării avansate a mesajelor (expedierea în multiple cozi, abonarea la multiple cozi).
+Pînă la această etapă, deși existau multiple topic-uri, atît producătorul cît și consumatorul puteau lucra doar cu unul.
+Sarcina este de a adăuga posibilitatea rutării avansate a mesajelor (abonarea la multiple topic-uri).
 
-Ajustează protocolul și implementează următoarele sarcini:
-- rutarea după numele cozii (posibilitatea de a specifica un pattern);
-- posiblitatea de a enumera explicit cozile;
+Ajustează protocolul și implementează una următoarele sarcini:
+- rutarea după topic (posibilitatea de a specifica un pattern);
+- posiblitatea de a enumera explicit topic-urile;
 
-Exemplu rutării după numele cuzii:
-Să presupunem că convenția la dumele cozii e următoarea- `<numele companiei>.<numele produsului>.<tipul mesajelor - eroare, info, etc>`
+Exemplu rutării după topic:
+Să presupunem că convenția la dumele topic-ului e următoarea- `<numele companiei>.<numele produsului>.<tipul mesajelor - eroare, info, etc>`
 
 Atunci, vor fi disponibile următoarele variații:
 - `Google.*` - toate mesajele pentru toate produsele a companiei „Google”
@@ -113,10 +123,10 @@ Acesta e doar un exemplu. Puteți oferi posibilitatea de a specifica o expresie 
 ##### Implementarea mecanismului „last will and testament” (Nota 10)
 
 Mecanismul „last will and testament” (impementat în protocolul [mqtt](http://www.hivemq.com/blog/mqtt-essentials-part-9-last-will-and-testament))
-este utilizat pentru a notifica despre deconectarea anormală abonatului (subscriber).
-Adică, sunt situații cînd este necesar să cunoști dacă deconectarea abonatului a fost una așteptată sau nu. Însă pentru aceasta sistemul trebuie să deosebească noțiunea de deconectare planificată și anormală.
+este utilizat pentru a notifica despre deconectarea anormală clientului (fie publisher și/sau subscriber).
+Adică, sunt situații cînd este necesar să cunoști dacă deconectarea clientului a fost una așteptată sau nu. Însă pentru aceasta sistemul trebuie să deosebească noțiunea de deconectare planificată și anormală.
 
 Sarcinile:
-- Ajustează protocolul ca subscriberii, înainte de deconectare să transmită un mesaj specific;
-- Ajustează protocolul ca subscriberii la conectare să transmită: mesajul și coada pentru „last will and testament”;
+- Ajustează protocolul ca clienții, înainte de deconectare să transmită un mesaj specific;
+- Ajustează protocolul ca clienții la conectare să transmită: mesajul și topic-ul pentru „last will and testament”;
 - Ajustează sistemul ca acesta să detecteze deconectări anormale și să transmită mesajul „last will and testament” (dacă este cazul).
