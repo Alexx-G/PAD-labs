@@ -1,5 +1,7 @@
 # PAD-labs
 
+**Previous version of labs you can find [here](https://github.com/Alexx-G/PAD-labs/tree/v0.2.0-2017) (tag `v0.2.0-2017`)**
+
 This repository contains info about the submission process of labs for the PAD course.
 Also, here you can find tasks with detailed description for all labs.
 
