@@ -4,7 +4,13 @@ This repository contains introduction and detailed tasks for labs for Distribute
 
 ## About labs
 
-**TBD**
+Check **[introduction](introduction.md)** for labs background, prerequisites and other useful information.
+
+1. [Message Brokers](lab1.md)
+  1.1. [Implement a message broker](lab1.md#part-1)
+  1.2. [Use `*`RPC-based communication](lab1.md#part-2)
+2. [Web-proxy](lab2.md)
+3. [Cloud (native) apps](lab3.md)
 
 ## Previous versions
 
