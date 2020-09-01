@@ -5,6 +5,16 @@ This lab has 2 parts:
 - [Implement a (simple) message broker](#part-1)
 - [Use \*RPC as broker's API](#part-2)
 
+# Prerequisites
+
+- Git;
+- Concurrency primitives and thread-safe collections;
+- Network programming:
+    - OSI Model;
+    - Network and Transport protocols;
+- Data representation and serialization/deserialization;
+- Basic understanding of communication protocols and APIs;
+
 # Part 1
 
 Implement a message broker that will decouple communication between different project components.
