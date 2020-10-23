@@ -28,6 +28,7 @@ This is what this lab is going to focus on:
 - [**Mandatory** - Implement a single horizontally scalable service](#mandatory---implement-a-single-horizontally-scalable-service)
 - [Implement a smart proxy](#implement-an-api-gateway)
 - [Implement sharding](#implement-sharding)
+- [Implement adapter layer](#implement-adapter-layer)
 
 ### Mandatory - Implement a single horizontally scalable service
 
@@ -35,7 +36,7 @@ One of the simplest variations of distributed systems is a service, scaled horiz
 This approach implies that either all instances use the same database or there's a mechanism to keep data in sync across all instances.
 
 **Requirements:**
-- Implement a web service that exposes an API over HTTP;
+- Implement a web service that exposes a RESTful API over HTTP;
 - Use a (R)DBMS to access/store data from that service;
 - Scale the service horizontally (run 2+ instances);
 - Use a reverse-proxy to load balance traffic across all instances transparently;
@@ -62,4 +63,36 @@ Some reasons to use an API Gateway / smart-proxy
 
 ### Implement sharding
 
-TBD
+Sharding is the process of logical (or physical) partitioning of the distributed system (or some of its components), depending on some partitioning criteria.
+Sharding is often used to fix different side-effects of non-uniform data access patterns:
+- noisy neighbors - an example would be a SaaS (Software-as-a-Service) system. A spike in traffic for a single tenant, can affect performance for other tenants, even if their traffic has the same pattern;
+- horizontal scalability overhead - scaling the system for a single poorly performing tenant isn't cost-efficient;
+- better reliability and tenant isolation;
+
+There are multiple ways of implementing sharding:
+- data sharding - allows partitioning data across different databases;
+- service sharding - allows partitioning traffic to a specific set of service instances;
+
+Also, there are multiple sharding methods:
+- key based sharding (or hash based sharding) - it uses a specific field of the given entity to determine what shard the entity belongs to.
+  Usually key based sharding is used with a hash function and its result must be deterministic;
+- Range based sharding - in this case a shard handles data from a specific range determined by a field (e.g. products that have price between 1000$ and 20000$ are assigned to the shard C);
+- Directory based sharding - it implies keeping a mapping between a specified entity and the shard it belongs to;
+
+**Requirements:**
+
+Choose one of the following options:
+- Option 1: Implement data sharding
+- Option 2: Implement service sharding
+
+What sharding method is going to be implemented is up to you.
+
+### Implement adapter layer
+
+One of API Gateway/Smart-proxy use cases is being able to offer an API in a different format, without changing services themselves.
+
+**Requirements:**
+- Keep API of the service implemented in the first task unchanged;
+- Add another entity to your data model that has a relationship with the entity exposed by the first service;
+- Add a service that exposes RESTful API for the entity added at previous step;
+- Implement a [GraphQL](https://graphql.org/) API at the smart-proxy level that aggregates data from both services;
